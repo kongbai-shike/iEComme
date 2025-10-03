@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>购物车</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 通用横幅 -->
+  <div class="banner">
+    <!-- 首页按钮 -->
+    <a href="index.html" class="home-btn">🏠 首页</a>
+    <div class="welcome">我的购物车</div>
+    <div class="auth"></div>
+  </div>
+
+  <!-- 购物车主体 -->
+  <main class="cart-box">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>商品</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>小计</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS 动态插入 -->
+      </tbody>
+    </table>
+
+    <div class="cart-total">
+      总计：<span id="total">¥0.00</span>
+    </div>
+    <button class="detail-btn" onclick="goCheckout()">去结算</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

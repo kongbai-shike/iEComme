@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>确认订单</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="banner">
+    <!-- 首页按钮 -->
+    <a href="index.html" class="home-btn">🏠 首页</a>
+    <div class="welcome">确认订单</div>
+    <div class="auth"></div>
+  </div>
+
+  <main class="confirm-box">
+    <!-- 1. 商品清单 -->
+    <section class="confirm-goods">
+      <h3>商品清单</h3>
+      <table class="confirm-table">
+        <thead>
+          <tr>
+            <th>商品</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>小计</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="confirm-total">商品合计：<span id="goodsTotal">¥0.00</span></div>
+    </section>
+
+    <!-- 2. 收货地址 -->
+    <section class="confirm-addr">
+      <h3>收货地址</h3>
+      <select id="addrSelect">
+        <option value="0">北京市海淀区xxx路001号</option>
+        <option value="1">上海市浦东新区yyy路002号</option>
+      </select>
+    </section>
+
+    <!-- 3. 运费 & 最终实付 -->
+    <section class="confirm-pay">
+      <div>运费：<span id="freight">¥10.00</span></div>
+      <div class="final-pay">实付金额：<span id="finalTotal">¥0.00</span></div>
+      <button class="detail-btn" onclick="submitOrder()">提交订单</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
